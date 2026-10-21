@@ -7,7 +7,7 @@
     <title>password generator</title>
 </head>
 <body>
-    <div class="app">
+    <div id="app">
         <!-- 生成结果 -->
         <div class="generate-pass">
             <input type="text">
@@ -37,12 +37,12 @@
             <div class="input-group">
                 Password Length
                 <div class="slider-container">
-                    <input type="range" min="5" max="20" value="5">
+                    <input type="range" min="5" max="20" value="5" class="slider" data-js-selector="slider">
                     <span class="value">5</span>
                 </div>
             </div>
             <!-- 生成按钮 -->
-            <button>Generate Password</button>
+            <button data-js-selector="button">Generate Password</button>
         </div>
     </div>
     <script src="app.js"></script>
