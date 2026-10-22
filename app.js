@@ -41,7 +41,8 @@ document.querySelector('#app').addEventListener('click', event => {
             break;
         //checkboxs
         case selectors.checkbox:
-            flags[event.target.control.id] = !event.target.control.checked
+            // flags[event.target.control.id] = !event.target.control.checked
+            flags[event.target.id] = event.target.checked
             console.log(flags)
             break;
         //slider
